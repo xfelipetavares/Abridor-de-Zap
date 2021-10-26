@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --verdezap: #0bb868;
+    --cinzazap: #ededed;
+}
+
+body {
+    max-width: 500px;
+    min-width: 200px;
+    background-color: var(--verdezap);
+    margin-inline: auto;
+    padding-inline: 10px;
+}
+h1 {
+    font-size: 3em;
+}
+section {
+    background-color: var(--cinzazap);
+    height: 520px;
+    border-radius: 5px;
+    text-align:center ;
+    margin-top: 20px;
+    display: block;
+}
+article {
+    display: block;
+    padding: 25px;
+}
+article input, button{
+    display: block;
+    margin-inline: auto;
+    padding: 10px;
+    margin-top: 15px;
+}
+button{
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px black;
+    font-size: 1.2em;
+}
+.div-radios input {
+    margin: 0;
+}
+.div-radios:hover{
+    background-color: var(--verdezap);
+    color: white;
+    transition: 200ms;
+}
+.div-radios{
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: black 0px 0px 3px;
+    padding-inline: 20px;
+    border-radius: 8px;
+    display: flex ;
+    width: 69%;
+    height: 50px;
+    justify-content: left;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+}
+button:hover{
+    background-color: var(--verdezap);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+a {
+    background-color: var(--verdezap);
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2em;
+    box-shadow: 0px 0px 1px black;
+    color: black;
+    width: 200px;
+    height: 65px;
+    display: block;
+    margin-inline: auto;
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+a :visited {
+    color: black;
+}
+a:hover {
+    background: var(--verdezap);
+    color: white;
+}
+a:hover {
+    color: white;
+}
+#div-result {
+    margin-top: 0px;
+    display: block;
+}
+#digite-algo {
+    border: 1px solid red;
+    display: block;
+    margin-top: 20px;
+    margin-inline: auto;
+    background-color: rgb(249, 53, 53);
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2em;
+    box-shadow: 0px 0px 1px black;
+    color: white;
+    width: 200px;
+    height: 45px;
+    display: block;
+    margin-inline: auto;
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+footer {
+    background-color: var(--cinzazap);
+    text-align: center;
+    height: 40px;
+    border-radius: 5px;
+    margin-block: 8px;
+    padding-block: 10px;
+}
