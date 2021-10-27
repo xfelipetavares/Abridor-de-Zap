@@ -12,4 +12,5 @@ function fazeramao() {
     } else if(radio2.checked == true) {
         p_result.innerHTML = `<a href="https://api.whatsapp.com/send?phone=55${n_digitado}&text" target="_blank" id="link-resultado">Abrir no whatsapp (Instalado)</a>`;
     }
+    requestAnimationFrame(fazeramao)
 }

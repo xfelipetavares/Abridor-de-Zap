@@ -1,48 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <title>Abridor de Zap</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon">
 </head>
 <body>
+    <main>
+        <div class="main-container">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Come Usar</a>
+                <a href="#">Sobre Nós</a>
+            </nav>
+            <div class="section-container">
+                <section class="section" id="left-sec">
+                    <form action="">
+                        <p id="begin">Tudo começa aqui...</p>
 
-    <section>
-        <article>
-            <form action="">
-                <h1>Abridor de Zap</h1>
-            
-            <h3>Digite um Número</h3>
-            <h6>Não coloque o 9 na frente, espaços ou hifens </h6>
-            <input type="tel" required name="teste" placeholder="(xx) xxxx-xxxx" maxlength="10" minlength="10" id="numero-digitado">
-            <div class="div-radios">
-                <input type="radio" checked name="escolha" id="radio1">
-                <label for="radio1">Abrir no WhatsApp Web (Navegador)</label>
+                        <input type="number" id="number-in">
+                        <p id="whatdothis">O que quer fazer com esse número?</p>
+                        
+                        <span>
+                            <div class="choice-do buttons-click">Abrir no WhatsApp Web
+                                (Navegador)</div>
+                            <div class="choice-do buttons-click">Abrir no WhatsApp Web
+                                (Instalado)</div>
+                        </span>
+
+                        <div id="result">
+                            <p id="ready">Tudo pronto!</p>
+                            <div id="click-to-open" class="buttons-click" href="#">Clique aqui para abrir!</div>
+                            <div id="footer-copy">
+                                <span>
+                                    <input id="out-link" type="text" value="">
+                                    <div id="click-to-copy" class="buttons-click">Copiar</div>
+                                </span>
+                                <p id="warning-copy">Se quiser copiar o link e usar em outra coisa, a gente deixa também! 😎</p>
+                            </div>
+                        </div>
+
+                    </form>
+                </section>
+    
+                <section class="section" id="right-sec">
+                    <header>
+                        <h1>Abridor de Zap</h1>
+                        <h2>Pare de perder tempo pegando o celular para adicionar cada contato.</h2>
+                        <h2>Seja produtivo, abra o zap!</h2>
+                        <img id="logo" src="./images/logo abridor de zap.png" alt="imagem da tampinha">
+                    </header>
+                </section>
+
             </div>
-            <div class="div-radios">
-                <input type="radio" name="escolha" id="radio2">
-                <label for="radio2">Abrir no WhatsApp Web (Instalado)</label>
-            </div>
-            <button type="button" onclick="fazeramao();">Gerar Link</button>
-            
-            <div id="div-result">
-                <p id="p-result"></p>
-            </div>
-            </form>
-            
-        </article>
-    </section>
-    <footer>
-        <p>&copy; Felipe Tavares</p>
-    </footer>
+        </div>
+    </main>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
-
-
-
-
-    

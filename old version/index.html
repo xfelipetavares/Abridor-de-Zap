@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Abridor de Zap</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon">
+        <script src="script.js"></script>
+</head>
+<body>
+    
+    <section>
+        <article>
+            <form action="">
+                <h1>Abridor de Zap</h1>
+                
+                <h3>Digite um Número</h3>
+                <h6>Não coloque o 9 na frente, espaços ou hifens </h6>
+                <input type="tel" required name="teste" placeholder="(xx) xxxx-xxxx" maxlength="10" minlength="10" id="numero-digitado">
+                <div class="div-radios">
+                    <input type="radio" checked name="escolha" id="radio1">
+                    <label for="radio1">Abrir no WhatsApp Web (Navegador)</label>
+                </div>
+                <div  class="div-radios">
+                    <input type="radio"  name="escolha" id="radio2">
+                    <label for="radio2">Abrir no WhatsApp Web (Instalado)</label>
+                </div>
+                <button type="button">Gerar Link</button>
+                
+                <div id="div-result">
+                    <p id="p-result"></p>
+                </div>
+            </form>
+            
+        </article>
+    </section>
+    <footer >
+        <p>&copy; Felipe Tavares</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
