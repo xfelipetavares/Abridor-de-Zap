@@ -119,6 +119,7 @@ h1 {
     transition: 300ms;
     background-color: var(--verdezaphover);
     scale: 1.1;
+    cursor: pointer;
 }
 form span {
     display: flex;
