@@ -37,19 +37,30 @@
                     <form action="">
                         <p id="begin">Tudo começa aqui...</p>
 
-                        <input type="number" id="number-in">
+                        <input type="text" placeholder="DDD+Número sem o 9" required="required" id="number-in">
                         <p id="whatdothis">O que quer fazer com esse número?</p>
                         
                         <span>
-                            <div class="choice-do buttons-click">Abrir no WhatsApp Web
-                                (Navegador)</div>
-                            <div class="choice-do buttons-click">Abrir no WhatsApp Web
-                                (Instalado)</div>
+                            <div id="open-browser" onclick="openBrowser()" class="choice-do buttons-click">
+                                Abrir no WhatsApp Web
+                                (Navegador)                                    
+                            </div>
+                            
+                            <div id="open-installed" onclick="openInstalled()" class="choice-do buttons-click">
+                                Abrir no WhatsApp Web
+                                (Instalado)
+                            </div>
                         </span>
 
                         <div id="result">
                             <p id="ready">Tudo pronto!</p>
-                            <div id="click-to-open" class="buttons-click" href="#">Clique aqui para abrir!</div>
+
+                            <a id="link-click2open" href="#">
+                                <div id="click-to-open" class="buttons-click">
+                                    Clique aqui para abrir!
+                                </div>
+                            </a>
+
                             <div id="footer-copy">
                                 <span>
                                     <input id="out-link" type="text" value="">
