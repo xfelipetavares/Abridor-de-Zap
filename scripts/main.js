@@ -20,7 +20,6 @@ function openBrowser(){
         link_click2open.href = `https://web.whatsapp.com/send?phone=55${number_in}`
         outLink.value = link_click2open.href
     }
-
 }
 
 function openInstalled(){
